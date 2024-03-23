@@ -1,7 +1,24 @@
+import HeroSection from "../../components/hero";
+import AboutUs from "../../components/about";
+import Achievements from "../../components/achievements";
+import ExperiencesSection from "../../components/experiences";
+import ProjectsSection from "../../components/projects";
+import Skills from "../../components/skills";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+
+
 export default function Homepage() {
     return (
         <>
-        <p>Homepage goes here</p>
+        <Header/>
+        <HeroSection/>
+        <AboutUs/>
+        <Skills/>
+        <Achievements/>
+        <ExperiencesSection/>
+        <ProjectsSection/>
+        <Footer/>
         </>
     );
 };
