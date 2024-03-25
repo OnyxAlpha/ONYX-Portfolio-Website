@@ -1,30 +1,36 @@
+// import herobg from "../../assets/herobg.jpg";
+import contactbg from "../../assets/contactbg.jpg";
+
 /* eslint-disable jsx-a11y/iframe-has-title */
 export default function Contact() {
     return (
         <>
-        <section>
-            <p>contact hero section goes here</p>     
+        <section className="bg-cover bg-center bg-fixed h-72 px-5 pt-40" 
+        style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${contactbg})`
+        }}>
+            <p className="text-white font-bold text-4xl">Contact Us</p>     
         </section>
 
-        <section className="p-10 bg-slate-200 lg:flex">
+        <section className="p-10 bg-slate-100 my-10 lg:flex">
             <div>
                 <h2 className="text-3xl font-bold pb-5">Write Us Something</h2>
                 <form>
                     <div className="md:flex md:w-11/12 md:gap-5">
                     <div className="md:w-6/12">
                     <label for="name" className="md:text-2xl">Your Name</label><br/>
-                    <input type="text" id="name" placeholder="Enter your name" className="w-11/12 mb-5 p-3 md:w-full"/><br/>
+                    <input type="text" id="name" placeholder="Enter your name" className="w-11/12 mb-5 p-3 border border-slate-300 md:w-full"/><br/>
 
                     <label for="email" className="md:text-2xl">Your Email</label><br/>
-                    <input type="email" id="email" placeholder="Enter your email" className="w-11/12 mb-5 p-3 md:w-full"/><br/>
+                    <input type="email" id="email" placeholder="Enter your email" className="w-11/12 mb-5 p-3 border border-slate-300 md:w-full"/><br/>
                     </div>
 
                     <div className="md:w-6/12">
                     <label for="subject" className="md:text-2xl">Your Subject</label><br/>
-                    <input type="text" id="subject" placeholder="Enter your subject" className="w-11/12 mb-5 p-3 md:w-full"/><br/>
+                    <input type="text" id="subject" placeholder="Enter your subject" className="w-11/12 mb-5 p-3 border border-slate-300  md:w-full"/><br/>
 
                     <label for="contact" className="md:text-2xl">Contact Number</label><br/>
-                    <select id="countrycode" className="mb-5 p-3 md:w-4/12">
+                    <select id="countrycode" className="mb-5 p-3 border-y border-l border-slate-300 md:w-4/12">
                         <option>+232</option>
                         <option>+233</option>
                         <option>+242</option>
@@ -38,46 +44,50 @@ export default function Contact() {
                         <option>+44</option>
                         <option>+49</option>
                     </select>
-                    <input type="number" id="contact" placeholder="Enter your phone number" className="w-8/12 mb-5 p-3 md:w-8/12"/><br/>
+                    <input type="number" id="contact" placeholder="Enter your phone number" className="w-8/12 mb-5 p-3 border-y border-r border-slate-300 md:w-8/12"/><br/>
                     </div>
                     </div>
 
                     <label for="message" className="md:text-2xl">Your Message</label><br/>
-                    <textarea id="message" placeholder="Tell us a few words" className="w-11/12 mb-5 p-3 h-20 md:h-32"></textarea><br/>
+                    <textarea id="message" placeholder="Tell us a few words" className="w-11/12 mb-5 p-3 h-20 border border-slate-300 md:h-32"></textarea><br/>
 
-                    <input type="button" onClick={() => alert("Your message has been sent")}  value="Send Message" className="border-2 border-neutral-600 p-2 md:w-40 md:text-xl"/>
+                    <input type="button" onClick={() => alert("Your message has been sent")}  value="Send Message" className="bg-blue-400 p-2 text-white font-semibold md:w-40 md:text-xl"/>
                 </form>
             </div>
 
-            <div className="bg-slate-500 mt-10 p-5">
-                <h3 className="font-semibold">CONTACT</h3>
-                <h2 className="font-bold text-2xl">Our Contact Detail</h2>
+            <div className="bg-blue-950 rounded-md mt-10 p-5">
+                <h3 className="text-blue-400 font-semibold">CONTACT</h3>
+                <h2 className="text-white font-bold text-2xl">Our Contact Detail</h2>
 
                 <div className="flex gap-5 border-b-2 py-4">
                     <div>Icon</div>
                     <div>
-                        <h3>Send E-mail</h3>
-                        <p>info@onyxdevs.com</p>
+                        <h3 className="text-white">Send E-mail</h3>
+                        <p className="text-slate-400">info@onyxdevs.com</p>
                     </div>
                 </div>
 
                 <div className="flex gap-5 border-b-2 py-4">
                 <div>Icon</div>
                     <div>
-                        <h3>Call Anytime</h3>
-                        <p>+233 20 123 456</p>
+                        <h3 className="text-white">Call Anytime</h3>
+                        <p className="text-slate-400">+233 20 123 456</p>
                     </div>
                 </div>
 
                 <div className="flex gap-5 py-4">
                 <div>Icon</div>
                     <div>
-                        <h3>Location</h3>
-                        <p>MEST Africa, Ambassadorial Enclave, 20 Aluguntugui St, Accra</p>
+                        <h3 className="text-white">Location</h3>
+                        <p className="text-slate-400">MEST Africa, Ambassadorial Enclave, 20 Aluguntugui St, Accra</p>
                     </div>
                 </div>
 
-                <p>Social Media icons</p>
+                <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                </div>
 
             </div>
         </section>
