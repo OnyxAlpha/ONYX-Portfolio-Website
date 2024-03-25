@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
+import { ReactTyped } from "react-typed";
 
 export default function HeroSection (){
   return (
@@ -9,7 +10,7 @@ export default function HeroSection (){
     <div className="relative">
       <Canvas
         camera={{
-          position: [10, -7.5, -5],
+          position: [7, -7.5, -5],
         }}
         style={{ height: "100vh" }}
         className="bg-slate-900"
@@ -20,9 +21,17 @@ export default function HeroSection (){
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none">
-        Team Onyx
+      <h1 className="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none">
+        OnyxDevs
       </h1>
+      <p className="absolute top-[60%] left-[30%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none"> We are </p>
+      <ReactTyped
+              className="absolute top-[60%] left-[50%] -translate-x-[40%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none "
+              strings={["Frontend Developers", "Backend Developers", "Full Stack Developers"]}
+              typeSpeed={20}
+              backSpeed={10}
+              loop
+            />
     </div>
     </>
   );

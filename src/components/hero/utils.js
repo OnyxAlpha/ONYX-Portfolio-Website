@@ -7,8 +7,7 @@ const NUM_POINTS = 2500;
 
 
 const getGradientStop = (ratio) => {
-    // For outer ring numbers potentially past max radius,
-    // just clamp to 0
+
     ratio = ratio > 1 ? 1 : ratio < 0 ? 0 : ratio;
 
     const c0 = LEFT_COLOR.match(/.{1,2}/g).map(
