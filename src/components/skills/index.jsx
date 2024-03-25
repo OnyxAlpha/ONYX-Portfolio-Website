@@ -5,7 +5,7 @@ export default function Skills() {
     <>
       <section>
         <div className="text-center">
-          <h3>Our Skills</h3>
+          <h3 className="font-semibold text-xl pt-5 md:text-3xl">Our Skills</h3>
         </div>
 
         <div className="grid grid-cols-3 p-10 md:grid-cols-5">
@@ -59,7 +59,7 @@ export default function Skills() {
             <p>Figma</p>
           </div>
 
-          <div className="bg-sky-200 text-center">
+          <div className="bg-sky-200 text-center md:col-span-2">
             <p>icon</p>
             <p>APIs</p>
           </div>
@@ -69,7 +69,7 @@ export default function Skills() {
             <p>Command Line</p>
           </div>
 
-          <div className="bg-sky-200 col-span-3 text-center md:col-span-1">
+          <div className="bg-sky-200 col-span-3 text-center md:col-span-2">
             <p>icon</p>
             <p>Deployment and Hosting</p>
           </div>
