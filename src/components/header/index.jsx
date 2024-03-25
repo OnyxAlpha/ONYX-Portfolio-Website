@@ -18,7 +18,7 @@ import control from "../../assets/control.png"
     ]
     
     return (
-       <div className="flex">
+       <div className="mininfo_nav_wrapper flex items-center bg-light-white max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex-col gap-4 border border-platinum rounded-4xl px-2.5 py-4">
         <div className={` ${open ? "w-72": "w-20"} pt-8 duration-300 h-screen bg-dark-green  relative`}>
             <img src={control} className={ `absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-dark-green ${!open && "rotate-180"}`} 
             onClick={()=>setOpen(!open)} alt="cursor"/>
