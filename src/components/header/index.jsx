@@ -6,15 +6,15 @@ import control from "../../assets/control.png"
 
  export const Header = () => {
     const[open, setOpen] =useState(true);
-    const Menus =[
-        { title: "Home", src: "Chart_fill" },
-        { title: "About", src: "Chat" },
-        { title: "Skills", src: "User", gap: true },
-        { title: "Projects ", src: "Calendar" },
-        { title: "Achievements", src: "Search" },
-        { title: "Blogs", src: "Chart" },
-        { title: "Contact ", src: "Folder", gap: true },
-        { title: "Share", src: "Setting" },
+    const Menus=[
+        { title: "Home", src: "fa-solid fa-house" },
+        { title: "About", src: "fa-solid fa-user" },
+        { title: "Skills", src: "fa-solid fa-graduation-cap", gap: true },
+        { title: "Projects ", src: "fa-solid fa-bars-progress" },
+        { title: "Achievements", src: "fa-solid fa-shield-halved" },
+        { title: "Blogs", src: "fa-solid fa-blog" },
+        { title: "Contact ", src: "fa-regular fa-envelope", gap: true },
+        { title: "Share", src: "fa-solid fa-share-nodes" },
     ]
     
     return (
@@ -29,7 +29,7 @@ import control from "../../assets/control.png"
             <ul className="pt-6">
               {Menus.map((menu, index)=>(
                 <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menu.gap ? "mt-8" : "mt-2"} ${index === 0 && "bg-light-white"}`}> 
-                 <img src={`./src/assets/${menu.src}.png`} alt="icons"/>
+                 <i class={menu.src}></i>
                  <span className={`${!open && "hidden"} orign-left duration-200`}>{menu.title}</span>
                 </li>
 
