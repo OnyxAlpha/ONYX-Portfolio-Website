@@ -18,7 +18,7 @@ export default function Blog() {
           </h2>
 
           <ul className="grid grid-cols-6 md:col-span-1 row-start-1 row-end-4 gap-x-9">
-            <div className="col-span-4 flex flex-col gap-10">
+            <div className="col-span-4 flex flex-col gap-5">
               <li>
                 <Link to={"/"}>
                   <div className="border-e-2 ">
