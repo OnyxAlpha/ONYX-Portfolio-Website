@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <>
         <section>
-            <p>contact section goes here</p>     
+            <p>contact hero section goes here</p>     
         </section>
 
         <section className="p-10 bg-slate-200">
@@ -42,10 +42,41 @@ export default function Contact() {
                 </form>
             </div>
 
-            <div className="bg-slate-500 mt-10">
-                <h3>Contact</h3>
-                <h2>Our Contact Detail</h2>
+            <div className="bg-slate-500 mt-10 p-5">
+                <h3 className="font-semibold">CONTACT</h3>
+                <h2 className="font-bold text-2xl">Our Contact Detail</h2>
+
+                <div className="flex gap-5 border-b-2 py-4">
+                    <div>Icon</div>
+                    <div>
+                        <h3>Send E-mail</h3>
+                        <p>info@onyxdevs.com</p>
+                    </div>
+                </div>
+
+                <div className="flex gap-5 border-b-2 py-4">
+                <div>Icon</div>
+                    <div>
+                        <h3>Call Anytime</h3>
+                        <p>+233 20 123 456</p>
+                    </div>
+                </div>
+
+                <div className="flex gap-5 py-4">
+                <div>Icon</div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>MEST Africa, Ambassadorial Enclave, 20 Aluguntugui St, Accra</p>
+                    </div>
+                </div>
+
+                <p>Social Media icons</p>
+
             </div>
+        </section>
+
+        <section>
+            <p>map section goes here</p>
         </section>
         </>
     );
