@@ -13,23 +13,23 @@ export default function Contact() {
         </section>
 
         <section className="p-10 bg-slate-100 my-10 lg:flex">
-            <div>
+            <div className="lg:w-1/2">
                 <h2 className="text-3xl font-bold pb-5">Write Us Something</h2>
                 <form>
                     <div className="md:flex md:w-11/12 md:gap-5">
                     <div className="md:w-6/12">
-                    <label for="name" className="md:text-2xl">Your Name</label><br/>
+                    <label for="name" className="md:text-xl">Your Name</label><br/>
                     <input type="text" id="name" placeholder="Enter your name" className="w-11/12 mb-5 p-3 border border-slate-300 md:w-full"/><br/>
 
-                    <label for="email" className="md:text-2xl">Your Email</label><br/>
+                    <label for="email" className="md:text-xl">Your Email</label><br/>
                     <input type="email" id="email" placeholder="Enter your email" className="w-11/12 mb-5 p-3 border border-slate-300 md:w-full"/><br/>
                     </div>
 
                     <div className="md:w-6/12">
-                    <label for="subject" className="md:text-2xl">Your Subject</label><br/>
+                    <label for="subject" className="md:text-xl">Your Subject</label><br/>
                     <input type="text" id="subject" placeholder="Enter your subject" className="w-11/12 mb-5 p-3 border border-slate-300  md:w-full"/><br/>
 
-                    <label for="contact" className="md:text-2xl">Contact Number</label><br/>
+                    <label for="contact" className="md:text-xl">Contact Number</label><br/>
                     <select id="countrycode" className="mb-5 p-3 border-y border-l border-slate-300 md:w-4/12">
                         <option>+232</option>
                         <option>+233</option>
@@ -44,11 +44,11 @@ export default function Contact() {
                         <option>+44</option>
                         <option>+49</option>
                     </select>
-                    <input type="number" id="contact" placeholder="Enter your phone number" className="w-8/12 mb-5 p-3 border-y border-r border-slate-300 md:w-8/12"/><br/>
+                    <input type="number" id="contact" placeholder="Phone number" className="w-8/12 mb-5 p-3 border-y border-r border-slate-300 md:w-8/12"/><br/>
                     </div>
                     </div>
 
-                    <label for="message" className="md:text-2xl">Your Message</label><br/>
+                    <label for="message" className="md:text-xl">Your Message</label><br/>
                     <textarea id="message" placeholder="Tell us a few words" className="w-11/12 mb-5 p-3 h-20 border border-slate-300 md:h-32"></textarea><br/>
 
                     <input type="button" onClick={() => alert("Your message has been sent")}  value="Send Message" className="bg-blue-400 p-2 text-white font-semibold md:w-40 md:text-xl"/>
@@ -59,34 +59,41 @@ export default function Contact() {
                 <h3 className="text-blue-400 font-semibold">CONTACT</h3>
                 <h2 className="text-white font-bold text-2xl">Our Contact Detail</h2>
 
-                <div className="flex gap-5 border-b-2 py-4">
-                    <div>Icon</div>
+                <div className="flex gap-5 border-b-2 py-6">
+                    <div>
+                    <i class="fa-solid fa-envelope bg-slate-100 p-3 text-xl"></i>
+                    </div>
                     <div>
                         <h3 className="text-white">Send E-mail</h3>
                         <p className="text-slate-400">info@onyxdevs.com</p>
                     </div>
                 </div>
 
-                <div className="flex gap-5 border-b-2 py-4">
-                <div>Icon</div>
+                <div className="flex gap-5 border-b-2 py-6 text-xl">
+                <div>
+                <i class="fa-solid fa-phone-volume bg-slate-100 p-3"></i>
+                </div>
                     <div>
                         <h3 className="text-white">Call Anytime</h3>
                         <p className="text-slate-400">+233 20 123 456</p>
                     </div>
                 </div>
 
-                <div className="flex gap-5 py-4">
-                <div>Icon</div>
+                <div className="flex gap-5 py-6">
+                <div>
+                <i class="fa-solid fa-location-dot bg-slate-100 p-3 text-xl"></i>
+                </div>
                     <div>
                         <h3 className="text-white">Location</h3>
                         <p className="text-slate-400">MEST Africa, Ambassadorial Enclave, 20 Aluguntugui St, Accra</p>
                     </div>
                 </div>
 
-                <div>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <div className="flex gap-5">
+                <i class="fa-brands fa-facebook text-white bg-blue-400 p-2 rounded-2xl"></i>
+                <i class="fa-brands fa-twitter text-white bg-blue-400 p-2 rounded-2xl"></i>
+                <i class="fa-brands fa-linkedin text-white bg-blue-400 p-2 rounded-2xl"></i>
+                <i class="fa-brands fa-pinterest text-white bg-blue-400 p-2 rounded-2xl"></i>
                 </div>
 
             </div>
