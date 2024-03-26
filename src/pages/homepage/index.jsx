@@ -4,7 +4,8 @@ import Achievements from "../../components/achievements";
 import ExperiencesSection from "../../components/experiences";
 import ProjectsSection from "../../components/projects";
 import Skills from "../../components/skills";
-import {Header} from "../../components/header";
+import BlogComponent from "../../components/blog";
+import Header from "../../components/header";
 import Footer from "../../components/footer";
 
 
@@ -18,6 +19,7 @@ export default function Homepage() {
         <Achievements/>
         <ExperiencesSection/>
         <ProjectsSection/>
+        <BlogComponent/>
         <Footer/>
         </>
     );

@@ -1,7 +1,10 @@
+import React from "react";
+import starwars from "../../assets/starWars.jpg";
+import { Link } from "react-router-dom";
 export default function Blog() {
-    return (
-        <>
-        <p>Blog goes here</p>
-        </>
-    );
-};
+  return (
+    <>
+      <p>blog</p>
+    </>
+  );
+}
