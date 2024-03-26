@@ -1,6 +1,5 @@
 import React from "react";
 import Homepage from "./pages/homepage";
-import Blog from "./pages/blog";
 import BlogDetail from "./pages/blog-details";
 import Contact from "./pages/contact";
 import Experiences from "./pages/experiences";
@@ -15,7 +14,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
-  { path: "/blog", element: <Blog /> },
   { path: "/blogdetail", element: <BlogDetail /> },
   { path: "/contact", element: <Contact /> },
   { path: "/experiences", element: <Experiences /> },

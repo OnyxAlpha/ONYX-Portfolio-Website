@@ -1,7 +1,11 @@
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 import control from "../../assets/control.png";
 
-export const Header = () => {
+
+
+
+export default function Header() {
   const [open, setOpen] = useState(true);
   const Menus = [
     { title: "Home", src: "fa-solid fa-house", gap: true },
@@ -15,7 +19,19 @@ export const Header = () => {
 
   return (
     <>
-        {/* for other screens */}
+    <section className="flex justify-between py-2 px-2 bg-white h-16 border-y-4 border-blue-800">
+      <div>
+        <img src={logo} alt="our logo" className="h-12"/>
+      </div>
+      <div>
+      <i class="fa-solid fa-bars mt-3 mr-2 text-xl">
+
+      </i>
+      </div>
+    </section>
+
+    
+        {/* for other screens
       <div className="lg:hidden overflow-y-scroll">
         <div className="flex items-center justify-between fixed top-0 left-0 right-0 z-50 p-2 px-3 bg-white/10 sm:px-6 backdrop-blur mobile-menu-bar xl:hidden">
           <div className="text-lg font-medium">
@@ -60,13 +76,8 @@ export const Header = () => {
       </div>
         
       <div  className={`w-full block flex-grow fixed top=0 -right-full w-full bg-flashWhite dark:bg-nightBlack z-999 h-full transition-all duration-300 right-0 py-12 px-8 overflow-y-scroll xl:hidden ${open ? "block" : "hidden"}`}
-      // className="fixed top=0 -right-full w-full bg-flashWhite dark:bg-nightBlack z-999 h-full transition-all duration-300 xl:hidden [&. is-menu-open]:right-0 py-12 px-8 overflow-y-scroll is-menu-open"> 
       >
      </div>
-     
-         {/* ends here */}
-
-
 
 
       <div className="mininfo_nav_wrapper flex items-center bg-light-white max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex-col gap-4 border border-platinum rounded-full px-3 py-20">
@@ -97,17 +108,7 @@ export const Header = () => {
             <i class="fa-solid fa-share-nodes"></i>
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
-
-// {Menus.map((menu, index)=>(
-//   <li key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menu.gap ? "mt-8" : "mt-2"} ${index === 0 && "bg-light-white"}`}>
-//    <i class={menu.src}></i>
-//    <span className={`${!open && "hidden"} orign-left duration-200`}>{menu.title}</span>
-//   </li>
-// ))}
-
-
-

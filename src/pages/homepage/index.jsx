@@ -13,14 +13,14 @@ export default function Homepage() {
     return (
         <>
         <Header/>
-        <HeroSection/>
+        {/* <HeroSection/>
         <AboutUs/>
         <Skills/>
         <Achievements/>
         <ExperiencesSection/>
         <ProjectsSection/>
         <BlogComponent/>
-        <Footer/>
+        <Footer/> */}
         </>
     );
 };
