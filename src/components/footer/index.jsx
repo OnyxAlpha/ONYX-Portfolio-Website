@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <>
-        <p>Footer goes here</p>
-        </>
+        <section className="bg-dark-green h-10">
+            <p className="flex justify-center text-gray-300 ">copyright@Onyx.com</p>
+        </section>
     );
 };
