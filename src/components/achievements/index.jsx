@@ -1,33 +1,87 @@
-import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import {
+  SiFramer,
+  SiTailwindcss,
+  SiReact,
+  SiJavascript,
+  SiCss3,
+} from "react-icons/si";
 
-export default function Achievements() {
-    return (
-        <>
-        <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-    <div
-        class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-        <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"></span>
-        <div class="relative z-10 mx-auto max-w-md">
-            <span class="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 text-white transition-all">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                </svg>
-            </span>
-            <div
-                class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share
-                    online.</p>
-            </div>
-            <div class="pt-5 text-base font-semibold leading-7">
-                <p>
-                    <a href="#" class="text-sky-500 transition-all duration-300 group-hover:text-white">Read the docs
-                        &rarr;
-                    </a>
-                </p>
-            </div>
-        </div>
+const IconSideNav = () => {
+  return (
+    <div className="bg-slate-900 text-slate-100 flex">
+      <SideNav />
+      <div className="w-full">
+        <div className="h-[35px] m-4 rounded border-2 border-dashed border-slate-600 bg-slate-800"></div>
+        <div className="h-[400px] m-4 rounded border-2 border-dashed border-slate-600 bg-slate-800"></div>
+      </div>
     </div>
-</div>
-        </>
-    );
+  );
 };
+
+const SideNav = () => {
+  const [selected, setSelected] = useState(0);
+
+  return (
+    // NOTE: In prod, you'd likely set height to h-screen and fix to the viewport
+    <nav className="h-[500px] w-fit bg-slate-950 p-4 flex flex-col items-center gap-2">
+      {/* Temp logo from https://logoipsum.com/ */}
+      <svg
+        width="40"
+        height="28"
+        viewBox="0 0 40 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="mb-4"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M9.98578 4.11462L0 14C1.99734 15.9773 4.27899 17.6437 6.76664 18.9474C7.45424 20.753 8.53203 22.4463 10 23.8995C15.5229 29.3668 24.4772 29.3668 30 23.8995C31.468 22.4463 32.5458 20.753 33.2334 18.9473C35.721 17.6437 38.0027 15.9773 40 14L30.0223 4.12266C30.0149 4.11527 30.0075 4.10788 30 4.1005C24.4772 -1.36683 15.5229 -1.36683 10 4.1005C9.99527 4.10521 9.99052 4.10991 9.98578 4.11462ZM29.0445 20.7309C26.1345 21.7031 23.0797 22.201 20 22.201C16.9203 22.201 13.8656 21.7031 10.9556 20.7309C11.2709 21.145 11.619 21.5424 12 21.9196C16.4183 26.2935 23.5817 26.2935 28 21.9196C28.381 21.5424 28.7292 21.145 29.0445 20.7309ZM12.2051 5.8824C12.9554 6.37311 13.7532 6.79302 14.588 7.13536C16.3038 7.83892 18.1428 8.20104 20 8.20104C21.8572 8.20104 23.6962 7.83892 25.412 7.13536C26.2468 6.79302 27.0446 6.3731 27.795 5.88238C23.4318 1.77253 16.5682 1.77254 12.2051 5.8824Z"
+          fill="#FFFFFF"
+        ></path>
+      </svg>
+      <NavItem selected={selected === 0} id={0} setSelected={setSelected}>
+        <SiTailwindcss />
+      </NavItem>
+      <NavItem selected={selected === 1} id={1} setSelected={setSelected}>
+        <SiReact />
+      </NavItem>
+      <NavItem selected={selected === 2} id={2} setSelected={setSelected}>
+        <SiJavascript />
+      </NavItem>
+      <NavItem selected={selected === 3} id={3} setSelected={setSelected}>
+        <SiFramer />
+      </NavItem>
+      <NavItem selected={selected === 4} id={4} setSelected={setSelected}>
+        <SiCss3 />
+      </NavItem>
+    </nav>
+  );
+};
+
+const NavItem = ({ children, selected, id, setSelected }) => {
+  return (
+    <motion.button
+      className="p-3 text-xl bg-slate-800 hover:bg-slate-700 rounded-md transition-colors relative"
+      onClick={() => setSelected(id)}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <span className="block relative z-10">{children}</span>
+      <AnimatePresence>
+        {selected && (
+          <motion.span
+            className="absolute inset-0 rounded-md bg-indigo-600 z-0"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0 }}
+          ></motion.span>
+        )}
+      </AnimatePresence>
+    </motion.button>
+  );
+};
+
+export default IconSideNav;
