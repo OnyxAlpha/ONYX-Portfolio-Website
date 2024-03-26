@@ -6,7 +6,7 @@ export default function ProjectsSection() {
         <>
         <section class="ps-24 pe-24 bg-slate-50" id="portfolio">
 
-<div class="ps-3.5">
+<div class="ps-4 pe-4">
 
     <p class="text-slate-400 pt-14 pb-3 text-xl relative z-10 text-center font-medium leading-tight before:static before:w-3 before:h-3 before:bg-violet-700 before:inline-block before:rounded-full before:me-2.5">
         Projects
