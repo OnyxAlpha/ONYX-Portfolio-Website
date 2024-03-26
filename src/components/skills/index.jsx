@@ -1,76 +1,89 @@
 import React from "react";
+import tailwindlogo from "../../assets/tailwindlogo.png";
+import rwdlogo from "../../assets/rwdlogo.png";
+import apilogo from "../../assets/apilogo.png";
+import clilogo from "../../assets/clilogo.png";
+import deploymentlogo from "../../assets/deploymentlogo.png";
+import figmalogo from "../../assets/figmalogo.png";
 
 export default function Skills() {
   return (
     <>
-      <section>
+      <section className="bg-slate-100">
         <div className="text-center">
           <h3 className="font-semibold text-xl pt-5 md:text-3xl">Our Skills</h3>
         </div>
 
         <div className="grid grid-cols-3 p-10 md:grid-cols-5">
           <div className="bg-sky-200 text-center">
-            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-html5 text-red-600 text-6xl"></i>
             <p>HTML5</p>
+            <p>Advanced</p>
           </div>
 
           <div className="text-center">
-            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-css3-alt text-sky-600 text-6xl"></i>
             <p>CSS</p>
+            <p>Advanced</p>
           </div>
 
           <div className="bg-sky-200 text-center">
-            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-js text-amber-300 text-6xl"></i>
             <p>JavaScript</p>
+            <p>Intermediate</p>
           </div>
 
           <div className="text-center">
-            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react text-cyan-600
+            text-6xl"></i>
             <p>React JS</p>
+            <p>Intermediate</p>
           </div>
 
           <div className="bg-sky-200 text-center">
-            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-node-js text-green-600 text-6xl"></i>
             <p>Nodejs</p>
+            <p>Intermediate</p>
           </div>
 
           <div className="text-center">
-          <i class="fa-brands fa-envira fa-rotate-by" style={{rotate: "40deg"}}></i>
+          <i class="fa-brands fa-envira fa-rotate-by text-green-500 text-6xl" style={{rotate: "40deg"}}></i>
             <p>MongoDB</p>
+            <p>Intermediate</p>
           </div>
 
           <div className="bg-sky-200 text-center">
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github text-6xl"></i>
             <p>GitHub</p>
           </div>
 
           <div className="text-center">
-            <p>icon</p>
+            <img src={tailwindlogo} alt="tailwind css logo"/>
             <p>Tailwind</p>
           </div>
 
           <div className="bg-sky-200 text-center">
-            <p>icon</p>
+            <img src={rwdlogo} alt="responsive web design"/>
             <p>Responsive Design</p>
           </div>
 
           <div className="text-center">
-            <p>icon</p>
+            <img src={figmalogo} alt="figma logo" />
             <p>Figma</p>
           </div>
 
           <div className="bg-sky-200 text-center md:col-span-2">
-            <p>icon</p>
+            <img src={apilogo} alt="api logo"/>
             <p>APIs</p>
           </div>
 
           <div className="text-center">
-            <p>icon</p>
+            <img src={clilogo} alt="command line logo"/>
             <p>Command Line</p>
           </div>
 
           <div className="bg-sky-200 col-span-3 text-center md:col-span-2">
-            <p>icon</p>
+            <img src={deploymentlogo} alt="deployment logo" className="h-28 w-36"/>
             <p>Deployment and Hosting</p>
           </div>
         </div>
