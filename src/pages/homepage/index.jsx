@@ -12,15 +12,15 @@ import Footer from "../../components/footer";
 export default function Homepage() {
     return (
         <>
-        <Header/>
-        {/* <HeroSection/>
+        {/* <Header/>
+        <HeroSection/>
         <AboutUs/>
-        <Skills/>
+        <Skills/> */}
         <Achievements/>
-        <ExperiencesSection/>
+        {/* <ExperiencesSection/>
         <ProjectsSection/>
-        <BlogComponent/>
-        <Footer/> */}
+        <BlogComponent/> */}
+        {/* <Footer/> */}
         </>
     );
 };

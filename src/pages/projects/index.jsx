@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer";
 
 
 
@@ -12,7 +13,7 @@ export default function Projects() {
 
       <section
         id="Projects"
-        class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+        class="w-fit pb-10 mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
       >
        <div class="w-96 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <a href="#">
@@ -26,9 +27,12 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
@@ -46,9 +50,12 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
@@ -66,9 +73,12 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
@@ -86,9 +96,12 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
@@ -106,9 +119,12 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
@@ -126,16 +142,21 @@ export default function Projects() {
               <p class="text-lg font-bold text-black truncate block capitalize">
                 OnyxCinema
               </p>
-              <div class="flex items-center">
+              <div class="flex">
                 <div class="ml-auto">
-                  <button className="rounded-xl border-2 border-dashed border-black bg-white px-1.5 py-1.5 font-semibold  text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Preview<i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">Live<i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="ml-auto">
+                <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-xl active:shadow-none">GitHub<i class="fa-brands fa-github"></i></button>
                 </div>
               </div>
             </div>
           </a>
         </div>
       </section>
+      <Footer/>
      </section>
+     
     </>
   );
 }
