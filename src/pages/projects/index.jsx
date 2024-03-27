@@ -46,7 +46,7 @@ export default function Projects() {
                 </div>
                 <div class="flex justify-between pt-3">
                   <div>
-                   <Link to="" target="_blank"> <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_white] active:translate-x-[0px] active:translate-y-[0px] active:rounded active:shadow-none text-gray-100 ">
+                   <Link to="https://onyx-agro-mart-eta.vercel.app/products" target="_blank"> <button className=" hover:rounded-md hover:shadow-[4px_4px_0px_white] active:translate-x-[0px] active:translate-y-[0px] active:rounded active:shadow-none text-gray-100 ">
                       Live {""}<i class="fa-solid fa-link "></i>
                     </button></Link>
                   </div>

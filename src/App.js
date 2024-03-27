@@ -2,7 +2,6 @@ import React from "react";
 import Homepage from "./pages/homepage";
 import BlogDetail from "./pages/blog-details";
 import Contact from "./pages/contact";
-import Experiences from "./pages/experiences";
 import Projects from "./pages/projects";
 import AdminLogin from "./pages/Administrator/adminLogin";
 import AdminSignup from "./pages/Administrator/adminSignup";
@@ -16,7 +15,6 @@ const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
   { path: "/blogdetail", element: <BlogDetail /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/experiences", element: <Experiences /> },
   { path: "/projects", element: <Projects/> },
   { path: "/administratorlogin", element: <AdminLogin /> },
   { path: "/administratorsignup", element: <AdminSignup /> },
