@@ -80,7 +80,7 @@ export default function Footer() {
                   <li>
                     <a
                       class="text-slate-300 hover:underline font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms?ref=njs-profile"
+                      href=""
                     >
                       Terms &amp; Conditions
                     </a>
@@ -110,12 +110,8 @@ export default function Footer() {
         <div class="flex flex-wrap items-center md:justify-between justify-center">
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-slate-300 font-semibold py-1">
-              Copyright © <span id="get-current-year">2024</span>
-              {" "}
-              <a
-                href="/"
-                class="text-slate-300 hover:underline"
-              >
+              Copyright © <span id="get-current-year">2024</span>{" "}
+              <a href="/" class="text-slate-300 hover:underline">
                 OnyxDevs
               </a>
               .
