@@ -1,74 +1,113 @@
-
-
 export default function ExperiencesSection() {
   return (
-    <section className="bg-light-white">
-      <div className=" font-semibold text-2xl flex-1 ml-72 h-4/6 w-6/12 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-        <h2>
-          Work <span className="text-dark-green">Experience</span>
-        </h2>
+    <section>
+      <div>
+        <h1 className="text-center text-xl font-bold md:text-3xl">Work Experience</h1>
+      </div>
 
-        <p className="text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
+      <div className="lg:flex lg:justify-center">
 
-        <div class="md:w-2/3">
-          <div class="relative mt-5 text-left ml-20">
-            <div class="flex items-center relative">
-              <div class="hidden md:block w-20">
-                <div class="font-bold italic text-sm ml-1 mt-5">GOOGLE</div>
-                <div class="md:flex space-x-1 text-xs">
-                  <div className="text-dark-green">Jan 20,2024 - Current</div>
-                </div>
-              </div>
-
-              <div class="border-r-2 border-dark-green absolute h-full left-2 md:left-20 top-2 z-10 "></div>
-
-              <div class="ml-10">
-                <div class="font-bold text-sm mt-6">Full Stack Developer</div>
-                <div class="mb-10 text-sm">
-                  Fusce auctor gravida dui, ut tristique nisi aliquam quis.
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center relative">
-              <div class="hidden md:block w-20">
-                <div class="font-bold italic text-sm">AMALITECH</div>
-                <div class="md:flex space-x-1 text-xs">
-                  <div className="text-dark-green">2022-2023</div>
-                </div>
-              </div>
-
-              <div class="border-r-2 border-dark-green absolute h-full left-2 md:left-20 top-2 z-10 "></div>
-
-              <div class="ml-10">
-                <div class="font-bold text-sm mt-6">Backend Developer</div>
-                <div class="mb-10 text-sm">
-                  Fusce auctor gravida dui, ut tristique nisi aliquam quis.{" "}
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center relative">
-              <div class="hidden md:block w-20">
-                <div class="font-bold italic text-sm">MEST</div>
-                <div class="md:flex space-x-1 text-xs">
-                  <div className="text-dark-green">2021-2022</div>
-                </div>
-              </div>
-
-              <div class="border-r-2 border-dark-green absolute h-full left-2 md:left-20 top-2 z-10 "></div>
-
-              <div class="ml-10">
-                <div class="font-bold text-sm mt-6">Frontend Developer</div>
-                <div class="mb-10 text-sm">
-                  Fusce auctor gravida dui, ut tristique nisi aliquam quis.
-                </div>
-              </div>
-            </div>
+      <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="border-b-2 border-slate-900 flex justify-between mb-2">
+          <div>
+            <p className="text-sm font-semibold md:text-xl">Web Developer @ Moreton Bay Regional Council</p>
+          </div>
+          <div>
+            <p className="text-sm md:text-xl">01/Feb-28/Feb 2024</p>
           </div>
         </div>
+
+        <div>
+          <div className="flex">
+          <i class="fa-solid fa-location-dot mt-1 mr-1 md:text-xl"></i>
+          <p className="md:text-xl md:mt-1">MEST, Africa</p>
+          </div>
+
+          <div className="p-4">
+             <ul className="list-disc">
+                <li className="mb-2 md:text-lg">Planned a website</li>
+                <li className="mb-2 md:text-lg">Created site maps and userflows</li>
+               <li className="mb-2 md:text-lg">Created a form</li>
+            </ul>
+          </div>
+
+          <div className="flex gap-5">
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">HTML</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">CSS</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">Figma</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div className="lg:flex lg:justify-center">
+
+      <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="border-b-2 border-slate-900 flex justify-between mb-2">
+          <div>
+            <p className="text-sm font-semibold md:text-xl">Frontend Developer @ InfotechdotnetSystems</p>
+          </div>
+          <div>
+            <p className="text-sm md:text-xl">Sept/2022-Nov/2023</p>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex">
+          <i class="fa-solid fa-location-dot mt-1 mr-1 md:text-xl"></i>
+          <p className="md:text-xl md:mt-1">Accra, Ghana</p>
+          </div>
+
+          <div className="p-4">
+             <ul className="list-disc">
+                <li className="mb-2 md:text-lg">Worked with backend developers to create APIs</li>
+                <li className="mb-2 md:text-lg">Actively developed and maintain user-friendly and interactive UI</li>
+               <li className="mb-2 md:text-lg">Consistently developed and deployed code to the organization's GitHub repository</li>
+            </ul>
+          </div>
+
+          <div className="flex gap-5">
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">Angular</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">API</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">Typescript</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div className="lg:flex lg:justify-center">
+
+      <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="border-b-2 border-slate-900 flex justify-between mb-2">
+          <div>
+            <p className="text-sm font-semibold md:text-xl">Frontend Developer @ Simeds</p>
+          </div>
+          <div>
+            <p className="text-sm md:text-xl">Aug/2023-Jan/2024</p>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex">
+          <i class="fa-solid fa-location-dot mt-1 mr-1 md:text-xl"></i>
+          <p className="md:text-xl md:mt-1">Accra, Ghana</p>
+          </div>
+
+          <div className="p-4">
+             <ul className="list-disc">
+                <li className="mb-2 md:text-lg">Actively write scalable, reusable, and effective typescript code</li>
+                <li className="mb-2 md:text-lg">Actively debug code to improve performance</li>
+               <li className="mb-2 md:text-lg">Consistently developed and deployed code to the organization's GitHub repository</li>
+            </ul>
+          </div>
+
+          <div className="flex gap-5">
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">Typescript</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">Debugging</p>
+          <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">GitHub</p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );
