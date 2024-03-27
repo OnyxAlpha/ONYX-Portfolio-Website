@@ -15,9 +15,9 @@ export default function Homepage() {
         <Header/>
         <AboutUs/>
         <Skills/>
-        {/* <Achievements/>
+        {/* <Achievements/> */}
         <ExperiencesSection/>
-        <ProjectsSection/>
+        {/* <ProjectsSection/>
         <BlogComponent/>
         <Footer/> */}
         </>
