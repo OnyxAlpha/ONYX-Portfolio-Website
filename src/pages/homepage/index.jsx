@@ -15,12 +15,12 @@ export default function Homepage() {
         <Header/>
         {/* <HeroSection/>
         <AboutUs/>
-        <Skills/>
+        <Skills/> */}
         <Achievements/>
-        <ExperiencesSection/>
+        {/* <ExperiencesSection/>
         <ProjectsSection/>
-        <BlogComponent/>
-        <Footer/> */}
+        <BlogComponent/> */}
+        {/* <Footer/> */}
         </>
     );
 };
