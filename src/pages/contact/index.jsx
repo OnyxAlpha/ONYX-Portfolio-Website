@@ -84,7 +84,7 @@ export default function Contact() {
                 <i class="fa-solid fa-location-dot bg-slate-100 p-3 text-xl"></i>
                 </div>
                     <div>
-                        <h3 className="text-white">Location</h3>
+                        <h3 className="text-white">Location:</h3>
                         <p className="text-slate-400">MEST Africa, Ambassadorial Enclave, 20 Aluguntugui St, Accra</p>
                     </div>
                 </div>
