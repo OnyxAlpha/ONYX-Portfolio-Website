@@ -13,10 +13,10 @@ export default function Homepage() {
         <HeroSection/>
         <AboutUs/>
         <Skills/>
-        {/* <Achievements/> */}
         <ExperiencesSection/>
         <ProjectsSection/>
         <BlogComponent/>
+        <Achievements/>
         {/* <Footer/> */}
         </>
     );
