@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Navbar = ({sidebarToggle, setSidebarToggle}) => {
   return (
-    <nav className={`${sidebarToggle ? "" : " ml-64 "}  w-full bg-violet-900 px-4 py-3 flex justify-between`}>
+    <>
+      <nav className={`${sidebarToggle ? "" : " ml-72 "}  w-full bg-violet-100 px-4 py-3 flex justify-between`}>
       <div className="flex item-center text-xl">
-        <i className="fa-solid fa-bars text-white me-4 cursor-pointer" onClick={()=> setSidebarToggle(!sidebarToggle)}></i>{" "}
-        <span className="text-white font-semibold">form Name</span>
+        <i className="fa-solid fa-bars text-black me-4 cursor-pointer" onClick={()=> setSidebarToggle(!sidebarToggle)}></i>{" "}
+        <span className="text-black font-semibold">form Name</span>
       </div>
       <div className="flex item-center gap-x-5">
         <div className="relative md:w-65">
@@ -19,17 +20,17 @@ export const Navbar = ({sidebarToggle, setSidebarToggle}) => {
         </div>
 
         <div className="relative">
-            <button className="text-white group">
+            <button className="text-black group">
             <i class="fa-solid fa-user w-5 h6 mt-1"></i>
             <div className="z-10 hidden bg-white absolute rounded-lg shadow w-32 group-focus:block top-full right-0">
-                <ul className="py-2 text-sm text-gray-950">
-                    <li>
+                <ul className="py-2 text-sm text-gray-950 bg-violet-50">
+                    <li className="p-2">
                        <Link>Profile</Link> 
                     </li>
-                    <li>
+                    <li className="p-2">
                        <Link>settings</Link> 
                     </li>
-                    <li>
+                    <li className="p-2">
                        <Link>Log Out</Link> 
                     </li>
                 </ul>
@@ -38,5 +39,7 @@ export const Navbar = ({sidebarToggle, setSidebarToggle}) => {
         </div>
       </div>
     </nav>
+        </>
+    
   );
 };
