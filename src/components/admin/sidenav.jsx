@@ -17,7 +17,7 @@ export const  Sidebar = ({sidebarToggle, setsetUserPage}) => {
           </li>
           <li className="mb-2 rounded hover:shadow hover:bg-violet-700 hover:text-white py-2"  onClick={()=> setsetUserPage('posts')}>
             
-            <Link className="px-2"><i className="fa-solid fa-book h-6 mr-2 -mt-2"></i>Posts</Link>
+            <Link className="px-2"><i className="fa-solid fa-book h-6 mr-2 -mt-2"></i>Blogs</Link>
           </li>
           <li className="mb-2 rounded hover:shadow hover:bg-violet-700 hover:text-white py-2" onClick={()=> setsetUserPage('achievements')}>
             

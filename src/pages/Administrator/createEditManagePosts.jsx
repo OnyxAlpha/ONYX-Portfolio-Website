@@ -1,23 +1,36 @@
 export default function AdminPosts({ sidebarToggle }) {
-  const addPosts = () => {
+  const submitBlog = () => {
     console.log("jwbdjnedk");
   };
+
+  const getBlogs = () =>{
+    console.log("got experience")
+  }
+
+  const updatetBlog = () =>{
+    console.log("updated experience")
+  }
+
+  const deletetBlog = () =>{
+    console.log("delete experience")
+  }
+
 
   return (
     <>
       <div
         className={`${
           sidebarToggle ? "" : "ml-80 mr-7 sm:w-74"
-        } w-98 mx-10 bg-violet-100 rounded m-2`}
+        } w-98 mx-10 bg-white pt-5 rounded-lg`}
       >
         <div className="w-full">
-          <h1 className="text-2xl font-medium p-5">Add New Posts</h1>
+          <h1 className="text-2xl font-medium p-5">Add New Blog</h1>
         </div>
-        <hr className="text-black" />
+        <hr className="bg-gray-500 h-1 mx-5" />
 
         <div className="p-5">
           <form
-            onSubmit={addPosts}
+            onSubmit={submitBlog}
             className={`${sidebarToggle ? "" : "w-89"} w-full`}
           >
             <div className="mb-4">
@@ -65,7 +78,7 @@ export default function AdminPosts({ sidebarToggle }) {
             </div>
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+              className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
             >
               Submit
             </button>
@@ -76,18 +89,20 @@ export default function AdminPosts({ sidebarToggle }) {
       <div
         className={`${
           sidebarToggle ? "" : "ml-80"
-        } w-89 text-center mx-10 mb-10`}
+        } w-89 text-center mx-10 pb-10`}
       >
-        <h1 className="text-2xl font-medium p-5">My Posts</h1>
+        <h1 className="text-2xl font-medium p-5">Our blogs</h1>
         <div
           className={`${
             sidebarToggle ? "" : "w-89"
-          } w-full border rounded-lg text-left overflow-hidden`}
+          } w-full border rounded-lg text-left overflow-hidden  bg-white`}
         >
           <div className="flex justify-between">
-            <p className="p-2 text-xl">post Name</p>
-            <div>
-              <i class="fa-solid fa-pen-to-square p-2 text-xl"></i>
+            <p className="p-2 text-xl">blog Name</p>
+            <div className="flex gap-3 px-2">
+              <i onClick={()=> updatetBlog()}className="fa-solid fa-pen-to-square p-2 text-xl text-violet-500 hover:text-violet-700 focus:text-violet-700"></i>
+              <div className="h-5 bg-gray-500 w-0.5 mt-3"></div>
+              <i onClick={()=> deletetBlog()} class="fa-solid fa-trash p-2 text-xl text-rose-600 hover:text-rose-700 focus:text-rose-700"></i>
             </div>
           </div>
           <hr />

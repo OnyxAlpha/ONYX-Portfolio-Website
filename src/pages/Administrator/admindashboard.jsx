@@ -12,7 +12,7 @@ export default function AdminDashboard() {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-violet-100">
         <Sidebar
           sidebarToggle={sidebarToggle}
           setsetUserPage={setsetUserPage}
@@ -23,11 +23,11 @@ export default function AdminDashboard() {
         />
       </div>
 
-      <div>
-        {userPage === "dashboard" && <DashboardItems sidebarToggle={sidebarToggle} />}
+      <div className="bg-violet-100">
+        {userPage === "dashboard" && <DashboardItems sidebarToggle={sidebarToggle} setsetUserPage={setsetUserPage} />}
         {userPage === "posts" &&  <AdminPosts sidebarToggle={sidebarToggle} />}
-        {userPage === "achievements" && <p> <AdminAchievements /> </p>}
-        {userPage === "experiences" && <p> <AdminExperiences /> </p>}
+        {userPage === "achievements" && <p> <AdminAchievements sidebarToggle={sidebarToggle} /> </p>}
+        {userPage === "experiences" && <p> <AdminExperiences sidebarToggle={sidebarToggle} /> </p>}
       </div>
     </>
   );
