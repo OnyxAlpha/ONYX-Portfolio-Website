@@ -12,7 +12,7 @@ export default function HeroSection (){
         camera={{
           position: [7, -7.5, -5],
         }}
-        style={{ height: "100vh" }}
+        style={{ height: "70vh" }}
         className="bg-slate-900"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
@@ -20,18 +20,24 @@ export default function HeroSection (){
         <pointLight position={[-30, 0, -30]} power={10.0} />
         <PointCircle />
       </Canvas>
+      
 
-      <h1 className="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none">
-        OnyxDevs
+      <div>
+      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none">
+      We are
       </h1>
-      <p className="absolute top-[60%] left-[30%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none"> We are </p>
+       <i class="fa-brands fa-linkedin absolute top-[30%] left-[44%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-4xl md:text-5xl lg:text-7xl pointer-events-none"></i>  
+
+       <i class="fa-brands fa-github absolute top-[30%] left-[57%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-4xl md:text-5xl lg:text-7xl pointer-events-none"></i>
       <ReactTyped
-              className="absolute top-[60%] left-[50%] -translate-x-[40%] -translate-y-[50%] text-slate-200 font-medium text-2xl md:text-5xl pointer-events-none "
+              className="absolute top-[65%] left-[50%] -translate-x-[40%] -translate-y-[50%] text-slate-200 font-medium text-xl md:text-4xl pointer-events-none "
               strings={["Frontend Developers", "Backend Developers", "Full Stack Developers"]}
               typeSpeed={20}
               backSpeed={10}
               loop
             />
+      </div>
+            
     </div>
     </>
   );

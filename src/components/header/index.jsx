@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Sidebar from "./sidebar.jsx";
+import HeroSection from "../hero/index.jsx";
 import logo from "../../assets/logo.png";
 import control from "../../assets/control.png";
 
@@ -19,16 +21,19 @@ export default function Header() {
 
   return (
     <>
-    <section className="flex justify-between py-2 px-2 bg-white h-16 border-y-4 border-blue-800">
+    <div>
+    <section className="flex justify-between py-2 px-2 bg-white h-16 border-y-4 border-blue-800 lg:h-20 lg:py-0">
       <div>
-        <img src={logo} alt="our logo" className="h-12"/>
+        <img src={logo} alt="our logo" className="h-12 md:h-14 md:mb-px lg:w-56 lg:h-20"/>
       </div>
       <div>
-      <i class="fa-solid fa-bars mt-3 mr-2 text-xl">
-
-      </i>
+      <i class="fa-solid fa-bars mt-3 mr-2 text-xl md:text-2xl lg:text-4xl"></i>
       </div>
     </section>
+    {/* <Sidebar/> */}
+    </div>
+    <HeroSection/>
+
 
     
         {/* for other screens

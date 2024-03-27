@@ -13,10 +13,9 @@ export default function Homepage() {
     return (
         <>
         <Header/>
-        {/* <HeroSection/>
         <AboutUs/>
         <Skills/>
-        <Achievements/>
+        {/* <Achievements/>
         <ExperiencesSection/>
         <ProjectsSection/>
         <BlogComponent/>
