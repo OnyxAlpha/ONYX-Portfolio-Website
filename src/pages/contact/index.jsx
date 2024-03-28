@@ -12,7 +12,7 @@ export default function Contact() {
         style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${contactbg})`
         }}>
-            <p className="text-white font-bold text-4xl">Contact Us</p>     
+            <p className="text-white text-center font-bold text-4xl">Contact Us</p>     
         </section>
 
         <section className="p-10 bg-slate-100 lg:flex">
@@ -105,7 +105,7 @@ export default function Contact() {
         <section className="w-full h-96">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.4740037422603!2d-0.1542954263557485!3d5.6443429327578105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b550b4b1287%3A0x5bfe4abfd88d302b!2sMEST%20Africa!5e0!3m2!1sen!2sgh!4v1711360105497!5m2!1sen!2sgh" 
         allowfullscreen="" loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade" className="mt-20 w-full h-full">
+        referrerpolicy="no-referrer-when-downgrade" className=" w-full h-full">
         </iframe>
         </section>
         <Footer/>

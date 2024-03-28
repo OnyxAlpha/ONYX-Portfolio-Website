@@ -7,6 +7,8 @@ import Skills from "../../components/skills";
 import BlogComponent from "../../components/blog";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+// import Testimonials from "../../components/testimonials";
+
 
 
 export default function Homepage() {
@@ -16,10 +18,11 @@ export default function Homepage() {
         <HeroSection/>
         <AboutUs/>
         <Skills/>
+        <Achievements/>
         <ExperiencesSection/>
         <ProjectsSection/>
         <BlogComponent/>
-        <Achievements/>
+        {/* <Testimonials/> */}
         <Footer/>
         </>
     );

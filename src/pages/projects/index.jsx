@@ -14,9 +14,9 @@ export default function Projects() {
   return (
     <>
     <Header/>
-      <section className="bg-slate-300">
+      <section className="bg-slate-700">
         <div class=" text-center p-10">
-          <h1 class="text-3xl text-slate-900">Our Projects Journey </h1>
+          <h1 class="text-3xl text-slate-300">Our Projects Journey </h1>
         </div>
 
         <section

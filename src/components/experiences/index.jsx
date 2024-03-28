@@ -12,7 +12,7 @@ export default function ExperiencesSection() {
   return (
     <section id="experiences">
       <div>
-        <h1 className="text-center text-xl font-bold md:text-3xl">Work Experience</h1>
+        <h1 className="text-center text-xl font-bold md:text-3xl pt-20"> Experiences</h1>
       </div>
 
       <div className="lg:flex lg:justify-center">
@@ -26,11 +26,7 @@ export default function ExperiencesSection() {
           <div>
             <p className="text-sm md:text-xl">01/Feb-28/Feb 2024</p>
           </div>
-          <div>
-            <button>
-              <i class="fa-solid fa-plus"></i>
-            </button>
-          </div>
+         
           </div>
         </div>
 
