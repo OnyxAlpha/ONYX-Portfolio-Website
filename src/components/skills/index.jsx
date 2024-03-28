@@ -9,7 +9,7 @@ import figmalogo from "../../assets/figmalogo.png";
 export default function Skills() {
   return (
     <>
-      <section className="bg-slate-900 m-5 rounded-md">
+      <section id="skills" className="bg-slate-900 pt-5">
         <div className="text-center">
           <h3 className="font-semibold text-xl text-white pt-5 md:text-3xl">
             Our Skills

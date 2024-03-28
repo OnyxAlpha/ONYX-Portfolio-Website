@@ -1,6 +1,16 @@
+import { useState } from "react";
 export default function ExperiencesSection() {
+
+  const Dropdown = function()  {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleDropdown = () => {
+      setIsOpen(!isOpen);
+    };
+  }
+
   return (
-    <section>
+    <section id="experiences">
       <div>
         <h1 className="text-center text-xl font-bold md:text-3xl">Work Experience</h1>
       </div>
@@ -12,8 +22,15 @@ export default function ExperiencesSection() {
           <div>
             <p className="text-sm font-semibold md:text-xl">Web Developer @ Moreton Bay Regional Council</p>
           </div>
+          <div className="flex gap-5">
           <div>
             <p className="text-sm md:text-xl">01/Feb-28/Feb 2024</p>
+          </div>
+          <div>
+            <button>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
           </div>
         </div>
 
