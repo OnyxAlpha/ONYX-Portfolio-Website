@@ -5,17 +5,20 @@ export default function Achievements() {
 
   useEffect(() => {
     // Fetch data from backend API
-    const url = new URL (`${process.env.REACT_APP_PORFOLIO_API}/administratorachievements`)
+    const url = new URL(
+      `${process.env.REACT_APP_PORTFOLIO_API}/administratorachievements`
+    );
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        console.log(data);
         setAchievements(data.Achievements);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []); 
+  }, []);
 
   return (
     <>
@@ -40,7 +43,7 @@ export default function Achievements() {
                 />
                 <div className=" font-bold p-4">
                   <p>{achievement.title}</p>
-                    
+
                   <p>{achievement.description}</p>
                 </div>
               </a>

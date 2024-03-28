@@ -11,14 +11,15 @@ export default function ExperiencesSection() {
   return (
     <section className="" id="experiences ">
       <div>
-        <h1 className="text-center text-xl font-bold md:text-3xl pt-20">
+        <h1 className="text-center text-xl font-bold md:text-3xl pt-10">
           {" "}
           Experiences
         </h1>
       </div>
 
+      <div className="flex py-5">
       <div className="lg:flex lg:justify-center">
-        <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="bg-blue-100 mt-5 border-1 border-slate-900 rounded-lg p-3 lg:w-3/4">
           <div className="border-b-2 border-slate-900 flex justify-between mb-2">
             <div>
               <p className="text-sm font-semibold md:text-xl">
@@ -32,8 +33,9 @@ export default function ExperiencesSection() {
             </div>
           </div>
 
-          <div>
-            <div className="flex">
+          <div className="flex flex-col gap-20">
+           <div>
+           <div className="flex">
               <i class="fa-solid fa-location-dot mt-1 mr-1 md:text-xl"></i>
               <p className="md:text-xl md:mt-1">MEST, Africa</p>
             </div>
@@ -47,6 +49,7 @@ export default function ExperiencesSection() {
                 <li className="mb-2 md:text-lg">Created a form</li>
               </ul>
             </div>
+           </div>
 
             <div className="flex gap-5">
               <p className="border border-slate-400 rounded-lg px-1 font-semibold md:text-lg">
@@ -64,7 +67,7 @@ export default function ExperiencesSection() {
       </div>
 
       <div className="lg:flex lg:justify-center">
-        <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="bg-blue-100 mt-5 border-slate-900 rounded-lg p-3 lg:w-3/4">
           <div className="border-b-2 border-slate-900 flex justify-between mb-2">
             <div>
               <p className="text-sm font-semibold md:text-xl">
@@ -114,7 +117,7 @@ export default function ExperiencesSection() {
       </div>
 
       <div className="lg:flex lg:justify-center">
-        <div className="bg-blue-100 m-5 border-2 border-slate-900 rounded-lg p-3 lg:w-3/4">
+        <div className="bg-blue-100 mt-5 mb-5 border-slate-900 rounded-lg p-3 lg:w-3/4">
           <div className="border-b-2 border-slate-900 flex justify-between mb-2">
             <div>
               <p className="text-sm font-semibold md:text-xl">
@@ -161,6 +164,7 @@ export default function ExperiencesSection() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
