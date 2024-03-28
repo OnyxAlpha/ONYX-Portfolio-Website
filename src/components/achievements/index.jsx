@@ -17,7 +17,7 @@ export default function Achievements() {
 
   return (
     <>
-      <section className="bg-slate-700">
+      <section id="achievements" className="bg-slate-700">
         <div className="text-center p-10">
           <h1 className="text-3xl">Achievements</h1>
         </div>

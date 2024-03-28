@@ -1,6 +1,6 @@
 export default function ExperiencesSection() {
   return (
-    <section>
+    <section id="experiences">
       <div>
         <h1 className="text-center text-xl font-bold md:text-3xl">Work Experience</h1>
       </div>

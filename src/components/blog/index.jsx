@@ -4,7 +4,7 @@ import starwars from  '../../assets/starWars.jpg';
 export default function BlogComponent() {
     return (
         <>
-        <div className="px-28 py-10 bg-slate-50">
+        <div id="blogs" className="px-28 py-10 bg-slate-50">
         <div className="ps-4 pe-4">
           <p className="text-slate-400 pt-14 pb-3 text-xl relative z-10 text-center font-medium leading-tight before:static before:w-3 before:h-3 before:bg-violet-700 before:inline-block before:rounded-full before:me-2.5">
             Blog Post

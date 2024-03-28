@@ -3,15 +3,12 @@ import onlylogobg from "../../assets/onlylogobg.png"
 export default function AboutUs() {
   return (
     <>
-      <section className="bg-cover bg-center" style={{
-            backgroundImage: `linear-gradient(rgba(212,209,209,0.911), rgba(212,209,209,0.911)), url(${onlylogobg})`
+      <section id="about" className="bg-cover bg-center" style={{
+            backgroundImage: `linear-gradient(rgba(227, 234, 236, 0.785), rgba(227, 234, 236, 0.785)), url(${onlylogobg})`
         }}>
-        {/* <div className="flex justify-center lg:w-2/5 lg:items-center">
-          <img src={logo} alt="team logo" className="h-40 md:h-60 md:w-80 lg:h-64 lg:w-96" />
-        </div> */}
         <div className="text-center">
           <div>
-            <h1 className="font-semibold text-xl pt-20 md:text-3xl">About Us</h1>
+            <h1 className="font-semibold text-xl pt-10 md:text-3xl">About Us</h1>
           </div>
 
           <div className="p-5 md:text-lg lg:text-2xl">

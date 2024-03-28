@@ -12,7 +12,7 @@ export default function HeroSection (){
         camera={{
           position: [7, -7.5, -5],
         }}
-        style={{ height: "70vh" }}
+        style={{ height: "90vh" }}
         className="bg-slate-900"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
