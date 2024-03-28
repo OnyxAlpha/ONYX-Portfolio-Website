@@ -29,7 +29,7 @@ export default function Header() {
         <a href="#skills" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-2 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Skills</a>
         <a href="#achievements" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-1 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Achievements</a>
         <a href="#experiences" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-2 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Experiences</a>
-        <a href="#portfolio" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-1 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Projects</a>
+        <Link to="/projects" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-1 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Projects</Link>
         <a href="#blogs" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-2 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Blogs</a>
         <Link to="/contact" className="block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-1 py-1 lg:px-3 md:border-none md:text-sm lg:text-lg">Contact</Link>
         <Link to="/administratorlogin"><i className="fa-solid fa-user block md:inline-block text-indigo-900 hover:text-blue-500 px-3 md:px-1 py-1  md:border-none md:text-sm lg:text-lg"></i></Link>

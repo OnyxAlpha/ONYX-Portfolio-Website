@@ -5,11 +5,11 @@ import onyxcinemashot from '../../assets/onyxcinemashot.png';
 export default function ProjectsSection() {
     return (
         <>
-        <section class="ps-24 pe-24 bg-slate-50" id="portfolio">
+        <section class="ps-24 pe-24 bg-slate-700" id="portfolio">
 
 <div class="ps-4 pe-4">
 
-    <p class="text-black pt-14 pb-3 text-xl md:text-4xl relative z-10 text-center font-medium">
+    <p class="text-slate-300 pt-14 pb-20 text-xl md:text-4xl relative z-10 text-center font-medium">
         Projects
     </p>
 
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
         </li>
 
     </ul>
-   <div  className='px-10'>
+   <div  className='px-10 pb-10'>
    <Link to="/projects"><button className='px-10 py-2 text-violet-700 hover:text-white focus:text-white bg-slate-300 hover:bg-violet-700 focus:hover:bg-violet-700 rounded-xl transition delay-50 duration-500 ease-in-out'>more <i class="fa-solid fa-arrow-right"></i></button></Link>
    </div>
 </div>

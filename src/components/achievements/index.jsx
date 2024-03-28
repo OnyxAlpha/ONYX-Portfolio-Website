@@ -5,10 +5,12 @@ export default function Achievements() {
 
   useEffect(() => {
     // Fetch data from backend API
-    fetch(`${process.env.REACT_APP_ONYX_PORFOLIO_API}/achievements`)
+    const url = new URL (`${process.env.REACT_APP_PORFOLIO_API}/administratorachievements`)
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setAchievements(data);
+        console.log(data)
+        setAchievements(data.Achievements);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -17,7 +19,7 @@ export default function Achievements() {
 
   return (
     <>
-      <section id="achievements" className="bg-slate-500">
+      <section id="achievements" className="bg-slate-300">
         <div className="text-center p-10">
           <h1 className="text-3xl">Our Achievements</h1>
         </div>
@@ -32,15 +34,14 @@ export default function Achievements() {
             >
               <a href="#">
                 <img
-                  src={achievement.image}
+                  src={`https://savefiles.org/${achievement.image}?shareable_link=163`}
                   alt="Product"
                   className="h-80 w-96 object-cover rounded-t-xl"
                 />
-                <div className="p-4">
-                <i class="fa-solid fa-note-sticky p-4"> : </i>
+                <div className=" font-bold p-4">
+                  <p>{achievement.title}</p>
+                    
                   <p>{achievement.description}</p>
-                  <i class="fa-solid fa-calendar-days p-4"> : </i>  
-                  <p>{achievement.date}</p>
                 </div>
               </a>
             </div>

@@ -6,7 +6,7 @@ import aiblog from "../../assets/aiblog.png";
 export default function BlogComponent() {
     return (
         <>
-        <div id="blogs" className="px-10 md:px-28 py-10 bg-slate-50">
+        <div id="blogs" className="px- md:px-28 py-10 bg-slate-50 ">
         <div className="ps-4 pe-4">
 
           <h2 class="tracking-tighter mb-10 text-slate-800 text-2xl md:text-4xl leading-tight h2 font-medium section-title z-30 text-center">
@@ -16,7 +16,7 @@ export default function BlogComponent() {
           <ul className="grid grid-cols-6 md:col-span-1 row-start-1 row-end-4 gap-x-9">
             <div className="col-span-4 flex flex-col gap-5">
               <li>
-                <Link to={"/"}>
+                <Link to={"https://css-tricks.com/5-mistakes-starting-react/"} target="_blank">
                   <div className="border-e-2 ">
                     <figure className="rounded-2xl overflow-hidden mb-5 mr-10 bg-cover bg-center w-24 md:w-60 lg:w-11/12">
                       <img
@@ -50,11 +50,10 @@ export default function BlogComponent() {
                   </div>
                 </Link>
               </li>
-              <button className='px-5 py-2 text-indigo-900 hover:text-white focus:text-white bg-blue-100 w-44 hover:bg-blue-500 focus:hover:bg-violet-700 rounded-xl transition delay-50 duration-500 ease-in-out'>See more <i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <div className="col-span-2">
               <li>
-                <Link to={"/"}>
+                <Link to={"https://css-tricks.com/different-ways-to-get-css-gradient-shadows/"} target="_blank">
                   <div class="mb-5 ">
                     <figure class="rounded-2xl mb-2 w-32 md:w-64 overflow-hidden">
                       <img
@@ -85,7 +84,7 @@ export default function BlogComponent() {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link to={"https://www.sitepoint.com/chatgpt-plugins-marketing-success/"} target="_blank">
                   <div class="mb-5">
                     <figure class="rounded-2xl w-32 md:w-64 overflow-hidden mb-2 mr-10">
                       <img
