@@ -15,7 +15,7 @@ export default function Contact() {
             <p className="text-white font-bold text-4xl">Contact Us</p>     
         </section>
 
-        <section className="p-10 bg-slate-100 my-10 lg:flex">
+        <section className="p-10 bg-slate-100 lg:flex">
             <div className="lg:w-1/2">
                 <h2 className="text-3xl font-bold pb-5">Write Us Something</h2>
                 <form>

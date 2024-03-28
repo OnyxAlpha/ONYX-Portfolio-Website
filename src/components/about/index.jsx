@@ -3,7 +3,7 @@ import onlylogobg from "../../assets/onlylogobg.png"
 export default function AboutUs() {
   return (
     <>
-      <section id="about" className="bg-cover bg-center" style={{
+      <section id="about" className="bg-cover bg-center pb-5" style={{
             backgroundImage: `linear-gradient(rgba(227, 234, 236, 0.785), rgba(227, 234, 236, 0.785)), url(${onlylogobg})`
         }}>
         <div className="text-center">
