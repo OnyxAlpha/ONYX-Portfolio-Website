@@ -25,7 +25,7 @@ export default function AdminDashboard() {
 
       <div className="bg-violet-100">
         {userPage === "dashboard" && <DashboardItems sidebarToggle={sidebarToggle} setsetUserPage={setsetUserPage} />}
-        {userPage === "posts" &&  <AdminPosts sidebarToggle={sidebarToggle} />}
+        {userPage === "posts" &&  <AdminPosts sidebarToggle={sidebarToggle} setsetUserPage={setsetUserPage} />}
         {userPage === "achievements" && <p> <AdminAchievements sidebarToggle={sidebarToggle} /> </p>}
         {userPage === "experiences" && <p> <AdminExperiences sidebarToggle={sidebarToggle} /> </p>}
       </div>

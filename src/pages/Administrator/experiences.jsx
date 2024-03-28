@@ -1,11 +1,35 @@
+import { useEffect, useState } from "react";
+
 export default function AdminExperiences({ sidebarToggle }) {
 
-    const addExperiences = () => {
-        console.log("added experience");
+  const [experiences, setExperiences] = useState([]);
+
+
+    const addExperiences = async (event) => {
+        // setsetUserPage('achievements');
+      console.log(event.target);
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      // console.log({formData});
+  
+      const data = await fetch(`${process.env.REACT_APP_PORTFOLIO_API}/experiences`,{
+        method: "POST",
+        body: formData, 
+      });
+      getExperiences();
+    if (data.status === 201) {
+      const incomingData = await data.json();
+      console.log(incomingData);
+    }
       };
 
       const getExperiences = () =>{
-        console.log("got experience")
+        const url = new URL (`${process.env.REACT_APP_PORTFOLIO_API}/experiences`)
+    fetch(url).then((res)=> res.json())
+    .then((data)=>{
+      console.log(data);
+      // setExperiences(data.Achievements)
+    })
       }
 
       const updateExperience = () =>{
@@ -18,7 +42,9 @@ export default function AdminExperiences({ sidebarToggle }) {
 
 
 
-
+      useEffect(()=>{
+        getExperiences();
+      },[])
     return (
         <>
         <div
@@ -38,12 +64,45 @@ export default function AdminExperiences({ sidebarToggle }) {
             >
               <div className="mb-4">
                 <label htmlFor="title" className="block text-gray-700">
-                  Title
+                  Title*
                 </label>
                 <input
                   type="text"
                   id="title"
-                  name="title"
+                  name="institutionName"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="title" className="block text-gray-700">
+                Institution Name*
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  name="institutionName"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="title" className="block text-gray-700">
+                Position*
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  name="institutionName"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="title" className="block text-gray-700">
+                Location*
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  name="location"
                   className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                 />
               </div>
@@ -58,24 +117,24 @@ export default function AdminExperiences({ sidebarToggle }) {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="image" className="block text-gray-700">
-                  Image
+                <label htmlFor="title" className="block text-gray-700">
+                Start Date*
                 </label>
                 <input
-                  type="file"
-                  id="image"
-                  name="image"
+                  type="date"
+                  id="title"
+                  name="startDate"
                   className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="url" className="block text-gray-700">
-                  URL
+                <label htmlFor="title" className="block text-gray-700">
+                End Date
                 </label>
                 <input
-                  type="url"
-                  id="url"
-                  name="url"
+                  type="date"
+                  id="title"
+                  name="endDate"
                   className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                 />
               </div>

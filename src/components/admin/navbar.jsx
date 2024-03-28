@@ -36,6 +36,7 @@ export const Navbar = ({sidebarToggle, setSidebarToggle}) => {
                 </ul>
             </div>
             </button>
+            <Link to={'/'}><i class="fa-solid fa-house pl-5"></i></Link>
         </div>
       </div>
     </nav>
